@@ -57,9 +57,20 @@ void print4(int n){
     };
 };
 
+// void print5(int n){
+//    for(int i = 0; i<n ; i++){
+//      for(int j = n; j>i ; j--){
+//         cout<<"* ";
+
+//      };
+//      cout<<endl;
+
+//    };
+// };
+
 void print5(int n){
    for(int i = 0; i<n ; i++){
-     for(int j = n; j>i ; j--){
+     for(int j = 0; j<n-i ; j++){
         cout<<"* ";
 
      };
@@ -68,13 +79,26 @@ void print5(int n){
    };
 };
 
+void print6(int n){
+   for(int i = 0; i<n ; i++){
+     for(int j = 1; j<n-i+1 ; j++){
+        cout<<j<<" ";
+
+     };
+     cout<<endl;
+
+   };
+};
+
+
+
 int main (){
     int t;
     cin >> t;
     for( int i = 0; i<t ; i++){
         int n;
         cin >> n ;
-        print5(n);
+        print6(n);
     };
 };
 
