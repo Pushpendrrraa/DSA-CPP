@@ -128,10 +128,31 @@ void print8(int n){
      } 
 };
 
-void print9(int n){
+// use to above patterns to complete pattern 9.
 
+void print10(int n){
+    for(int i = 0; i<n ; i ++){
+        for(int j = 0; j<n-i-1 ; j++){
+            cout<<"* ";
+        };
+        cout<<endl;
+    };
     
-}
+};
+
+void print10_2(int n){
+    for(int i = 1; i<=2*n-1; i++){
+        // int stars = i;
+        // if(i > n) stars = 2*n-1;
+        int stars = (i <= n) ? i : (2 * n - i);
+        for(int j = 1; j<=stars;j++){
+            cout<<"* ";
+        };
+        cout<<endl;
+    }
+};
+
+
 
 int main (){
     int t;
@@ -139,7 +160,7 @@ int main (){
     for( int i = 0; i<t ; i++){
         int n;
         cin >> n ;
-        print9(n);
+        print10_2(n);
     };
 };
 
