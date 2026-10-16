@@ -152,7 +152,31 @@ void print10_2(int n){
     }
 };
 
+void print11(int n){
+    int start = 1;
+    for(int i = 0; i<n ; i ++){
+        if(i%2 == 0) start = 1;
+            
+            else start = 0;
+        for(int j = 0; j<=i ; j++){
+            cout<<start;
+            start = 1 - start;
+        }
+        cout<<endl;
+    }
+}
 
+
+void print12(int n){
+    int p = 1;
+    for(int i = 0; i<n ; i ++){
+        for(int j = 0; j<=i; j++){
+            cout<<p;
+        }
+        p++;
+    }
+
+}
 
 int main (){
     int t;
@@ -160,7 +184,7 @@ int main (){
     for( int i = 0; i<t ; i++){
         int n;
         cin >> n ;
-        print10_2(n);
+        print12(n);
     };
 };
 
